@@ -1,0 +1,28 @@
+#include<stdio.h>
+void show(int *p,int n)
+{
+	int i,pr=1;
+	for(i=0;i<n;i++)
+	{
+		//printf("value %d  address  %u\n",*p,p);
+		printf("%d\n",*p);
+		pr=pr * *p;
+		p++;
+	}
+	printf("Product = %d\n",pr);
+}
+int main()
+{
+	int a[30],n,i;
+	printf("Enter total elements ");
+	scanf("%d",&n);
+	//input
+	for(i=0;i<n;i++)
+	{
+		printf("Enter %d element ",i);
+		scanf("%d",&a[i]);
+	}
+	//show
+	show(a,n);	//or	//show(&a[0],n);
+	return 0;
+}
