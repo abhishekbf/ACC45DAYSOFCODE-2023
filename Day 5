@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<conio.h>
+int main()
+{
+	int a[10][10],i,j,r,c;
+	//input of rows and cols
+	printf("Enter total rows and cols ");
+	scanf("%d %d",&r,&c);
+	//input of elements
+	for(i=0;i<r;i++)
+	{
+		for(j=0;j<c;j++)
+		{
+			printf("Enter [%d][%d] element ",i,j);
+			scanf("%d",&a[i][j]);
+		}
+	}
+	//display 
+	for(i=0;i<r;i++)
+	{
+		for(j=0;j<c;j++)
+		{
+			printf("%d ",a[i][j]);
+		}
+		printf("\n");
+	}
+	return 0;
+}
