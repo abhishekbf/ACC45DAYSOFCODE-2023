@@ -1,0 +1,21 @@
+/*
+isdigit()
+
+character is a digit or not
+*/
+
+#include<stdio.h>
+#include<conio.h>
+#include<ctype.h>
+int main()
+{
+  char ch;
+  printf("Enter any character ");
+  scanf("%c",&ch);
+  if(isdigit(ch))
+  printf("it is a digit");
+  else
+  printf("it is not a digit");
+  getch();
+  return 0;
+}
