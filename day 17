@@ -1,0 +1,23 @@
+//strcpy()
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+int main()
+{
+	char n[20],n1[20];
+	//1
+//	printf("Enter any string ");
+//	gets(n);
+//	strcpy(n1,n);
+//	printf("String is %s ,copied string is %s\n",n,n1);
+	//2
+	printf("Enter 1st string ");
+	gets(n);
+	printf("Enter 2nd string ");
+	gets(n1);
+	strcpy(n1,n);
+	printf("String is %s ,copied string is %s\n",n,n1);
+
+	getch();
+	return(0);
+}
