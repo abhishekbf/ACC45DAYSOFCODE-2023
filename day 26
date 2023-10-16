@@ -1,0 +1,21 @@
+/*
+isalnum()
+
+character is an alpha numeric character  or not
+*/
+
+#include<stdio.h>
+#include<conio.h>
+#include<ctype.h>
+int main()
+{
+  char ch;
+  printf("Enter any character ");
+  scanf("%c",&ch);
+  if(isalnum(ch))
+  printf("it is an alpha numeric character");
+  else
+  printf("it is not an alpha numeric character");
+  getch();
+  return 0;
+}
